@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="hero">
+    <h2>Welcome to Conversify!</h2>
+    <p>Learn, practice, and test yourself on the French subjunctive mood.</p>
+
+    <div class="hero-buttons">
+        <!-- Hero Button 1 -->
+        <div class="hero-button" onclick="window.location.href='{{ url_for('learn') }}'">
+            <h3>Learn</h3>
+            <p>Recap and understand the French subjunctive.</p>
+            <a href="{{ url_for('learn') }}">Start Learning</a>
+        </div>
+
+        <!-- Hero Button 2 -->
+        <div class="hero-button"

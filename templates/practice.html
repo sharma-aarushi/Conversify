@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="content-box">
+    <h2>Practice the French Subjunctive</h2>
+    <p>Type 'commencer' to start or 'quitter' to stop the practice session.</p>
+    <input type="text" id="command-input" placeholder="Type 'commencer' or 'quitter' here"
+        style="width: 100%; max-width: 600px; padding: 10px; font-size: 1em;">
+    <div id="practice-session">
+        <p id="practice-question"></p>
+        <input type="text" id="answer-input" placeholder="Type your answer here" style="display:none;">
+        <button id="submit-answer" style="display:none;">Submit</button>
+    </div>
+    <p id="feedback" style="color: blue; font-weight: bold;"></p> <!-- Feedback element -->
+</div>
+<script src="{{ url_for('static', filename='js/practice.js') }}"></script>
+{% endblock %}

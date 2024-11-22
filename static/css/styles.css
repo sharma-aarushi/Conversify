@@ -1,0 +1,316 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    /* White base color */
+    color: #2C3E50;
+    /* Dark gray for text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #2ECC71;
+    /* Green navbar */
+    height: 60px;
+    /* Navbar height */
+    display: flex;
+    /* Flexbox layout */
+    align-items: center;
+    /* Vertically center items */
+    justify-content: space-between;
+    /* Space logo to the left and menu to the right */
+    padding: 5px 20px;
+    /* Add horizontal padding */
+    position: fixed;
+    /* Fix navbar at the top */
+    width: 100%;
+    /* Full-width navbar */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
+}
+
+/* Logo on the far left */
+.navbar h1 {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffffff;
+    flex-shrink: 0;
+    /* Prevent shrinking of the logo */
+}
+
+.navbar h1 a {
+    color: #ffffff;
+    /* White logo text */
+    text-decoration: none;
+    /* No underline */
+}
+
+/* Menu on the far right */
+.navbar nav {
+    margin-left: auto;
+    /* Push the menu to the far right */
+}
+
+.navbar nav ul {
+    list-style: none;
+    /* Remove bullet points */
+    display: flex;
+    /* Align items horizontally */
+    gap: 20px;
+    /* Add spacing between menu items */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin: 0;
+}
+
+.navbar nav ul li a {
+    color: #ffffff;
+    /* White menu links */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 1em;
+    font-weight: bold;
+    padding:  5px 10px;
+    /* Add clickable padding */
+    border-radius: 4px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensures the padding applies properly */
+}
+
+.navbar nav ul li a:hover {
+    background-color: #27AE60;
+    /* Slightly darker green on hover */
+}
+
+
+/* Hero section styling */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* Full viewport height minus navbar */
+    text-align: center;
+    margin-top: 60px;
+    /* Adjust for navbar height */
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #7F8C8D;
+    /* Muted gray for secondary text */
+    margin-bottom: 40px;
+}
+
+/* Hero buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ECF0F1;
+    /* Light gray background for buttons */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.hero-button:hover {
+    transform: translateY(-5px);
+    /* Slight hover effect */
+    background-color: #F9FBFC;
+    /* Slightly lighter gray */
+}
+
+.hero-button h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.hero-button p {
+    font-size: 1em;
+    color: #7F8C8D;
+}
+
+.hero-button a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: #2ECC71;
+    margin-top: 10px;
+}
+
+.hero-button a:hover {
+    text-decoration: underline;
+}
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #2C3E50;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Learn Page Container */
+.learn-container {
+    padding: 20px;
+    text-align: left;
+    /* Align text to the left */
+}
+
+.learn-container h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2C3E50;
+    text-align: center;
+    /* Center the main heading */
+}
+
+.learn-container .menu {
+    margin-bottom: 20px;
+    text-align: center;
+    /* Center the menu items */
+}
+
+.learn-container .menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.learn-container .menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.learn-container .menu ul li a {
+    text-decoration: none;
+    color: #2ECC71;
+    font-weight: bold;
+}
+
+.learn-container .menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+}
+
+section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+section p {
+    margin: 10px 0;
+    color: #7F8C8D;
+    /* Muted gray for paragraph text */
+}
+
+section em {
+    font-style: italic;
+    color: #2C3E50;
+}
+
+section strong {
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+}
+
+table thead th {
+    background-color: #2ECC71;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+table tbody td {
+    padding: 10px;
+    border: 1px solid #ECF0F1;
+    text-align: center;
+    color: #2C3E50;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #F9FBFC;
+    /* Light gray for alternating rows */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #2ECC71;
+    /* Same green as the navbar for consistency */
+    color: #ffffff;
+    /* White text */
+    text-align: right;
+    padding: 0px 10px;
+    position: fixed;
+    /* Sticks the footer to the bottom */
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+    /* Slightly smaller font size for footer */
+    z-index: 1000;
+}
+
+.footer a {
+    color: #ffffff;
+    /* White links in footer */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

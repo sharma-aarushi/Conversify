@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="quiz-container">
+    <h2>Test Yourself!</h2>
+    <p>Ready to test your knowledge of the French subjunctive? Answer the questions below!</p>
+
+    <!-- Display the score -->
+    <p id="quiz-score">Score: 0</p>
+
+    <div id="quiz-question">
+        <p>Question: <span id="quiz-question-text"></span></p>
+        <input type="text" id="quiz-answer-input" placeholder="Type your answer here">
+        <button id="submit-quiz-answer">Submit</button>
+    </div>
+    <p id="quiz-feedback"></p>
+
+    <div id="quiz-results">
+        <button id="restart-quiz">Restart Quiz</button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
+{% endblock %}
