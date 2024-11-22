@@ -14,4 +14,18 @@
         </div>
 
         <!-- Hero Button 2 -->
-        <div class="hero-button"
+        <div class="hero-button" onclick="window.location.href='{{ url_for('practice') }}'">
+            <h3>Practice</h3>
+            <p>Engage in interactive drills to practice grammar.</p>
+            <a href="{{ url_for('practice') }}">Start Practicing</a>
+        </div>
+
+        <!-- Hero Button 3 -->
+        <div class="hero-button" onclick="window.location.href='{{ url_for('quiz') }}'">
+            <h3>Quiz</h3>
+            <p>Test your knowledge with fun and interactive quizzes.</p>
+            <a href="{{ url_for('quiz') }}">Take a Quiz</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

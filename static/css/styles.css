@@ -1,97 +1,57 @@
 /* General body styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    /* White base color */
-    color: #2C3E50;
-    /* Dark gray for text */
+    background-color: ##FDF6E4; /* Light cream background */
+    color: #4E342E; /* Deep brown text */
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 /* Navbar Styling */
 .navbar {
-    background-color: #2ECC71;
-    /* Green navbar */
-    height: 60px;
-    /* Navbar height */
+    background-color: #B3541E; /* Rusty brown-orange */
+    height: 50px; /* Reduced height */
     display: flex;
-    /* Flexbox layout */
     align-items: center;
-    /* Vertically center items */
     justify-content: space-between;
-    /* Space logo to the left and menu to the right */
-    padding: 5px 20px;
-    /* Add horizontal padding */
+    padding: 0 20px; /* Adjusted padding */
     position: fixed;
-    /* Fix navbar at the top */
-    width: 100%;
-    /* Full-width navbar */
     top: 0;
     left: 0;
+    width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Add shadow */
-}
-
-/* Logo on the far left */
-.navbar h1 {
-    margin: 0;
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #ffffff;
-    flex-shrink: 0;
-    /* Prevent shrinking of the logo */
 }
 
 .navbar h1 a {
-    color: #ffffff;
-    /* White logo text */
+    color: #FFFFFF; /* White logo text */
     text-decoration: none;
-    /* No underline */
-}
-
-/* Menu on the far right */
-.navbar nav {
-    margin-left: auto;
-    /* Push the menu to the far right */
+    font-size: 0.8em; /* Reduced logo size */
+    font-weight: bold;
 }
 
 .navbar nav ul {
     list-style: none;
-    /* Remove bullet points */
     display: flex;
-    /* Align items horizontally */
-    gap: 20px;
-    /* Add spacing between menu items */
+    gap: 15px; /* Reduced spacing between items */
     margin: 0;
     padding: 0;
 }
 
-.navbar nav ul li {
-    margin: 0;
-}
-
 .navbar nav ul li a {
-    color: #ffffff;
-    /* White menu links */
+    color: #FDF6E4; /* Light cream */
     text-decoration: none;
-    /* Remove underline */
-    font-size: 1em;
+    font-size: 0.9em; /* Reduced font size */
     font-weight: bold;
-    padding:  5px 10px;
-    /* Add clickable padding */
+    padding: 3px 7px; /* Reduced padding */
     border-radius: 4px;
-    /* Rounded corners */
     transition: background-color 0.3s ease;
-    display: inline-block; /* Ensures the padding applies properly */
 }
 
 .navbar nav ul li a:hover {
-    background-color: #27AE60;
-    /* Slightly darker green on hover */
+    background-color: #D87A2B; /* Burnt orange on hover */
 }
-
 
 /* Hero section styling */
 .hero {
@@ -99,25 +59,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    /* Full viewport height minus navbar */
+    height: calc(100vh - 50px); /* Full screen minus navbar height */
     text-align: center;
-    margin-top: 60px;
-    /* Adjust for navbar height */
     padding: 20px;
+    background-color: #FDF6E4; /* Light cream */
 }
 
 .hero h2 {
-    font-size: 2.5em;
+    font-size: 3em; /* Slightly larger title */
     font-weight: bold;
-    color: #2C3E50;
+    color: #B3541E; /* Rusty brown-orange */
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 1.2em;
-    color: #7F8C8D;
-    /* Muted gray for secondary text */
+    color: #4E342E; /* Deep brown */
     margin-bottom: 40px;
 }
 
@@ -133,40 +90,32 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #ECF0F1;
-    /* Light gray background for buttons */
-    padding: 30px;
+    background-color: #E8C097; /* Light tan */
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 180px;
     cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .hero-button:hover {
     transform: translateY(-5px);
-    /* Slight hover effect */
-    background-color: #F9FBFC;
-    /* Slightly lighter gray */
+    background-color: #D87A2B; /* Burnt orange hover */
 }
 
 .hero-button h3 {
     font-size: 1.4em;
     font-weight: bold;
-    color: #2C3E50;
+    color: #4E342E; /* Deep brown */
     margin-bottom: 10px;
-}
-
-.hero-button p {
-    font-size: 1em;
-    color: #7F8C8D;
 }
 
 .hero-button a {
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
-    color: #2ECC71;
+    color: #B3541E; /* Rusty brown-orange */
     margin-top: 10px;
 }
 
@@ -174,143 +123,281 @@ body {
     text-decoration: underline;
 }
 
-/* General Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    color: #2C3E50;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Learn Page Container */
-.learn-container {
-    padding: 20px;
-    text-align: left;
-    /* Align text to the left */
-}
-
-.learn-container h2 {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #2C3E50;
-    text-align: center;
-    /* Center the main heading */
-}
-
-.learn-container .menu {
-    margin-bottom: 20px;
-    text-align: center;
-    /* Center the menu items */
-}
-
-.learn-container .menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.learn-container .menu ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.learn-container .menu ul li a {
-    text-decoration: none;
-    color: #2ECC71;
-    font-weight: bold;
-}
-
-.learn-container .menu ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styling */
-section {
-    margin-bottom: 30px;
-}
-
-section h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #2C3E50;
-}
-
-section p {
-    margin: 10px 0;
-    color: #7F8C8D;
-    /* Muted gray for paragraph text */
-}
-
-section em {
-    font-style: italic;
-    color: #2C3E50;
-}
-
-section strong {
-    font-weight: bold;
-    color: #2C3E50;
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    text-align: left;
-}
-
-table thead th {
-    background-color: #2ECC71;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-}
-
-table tbody td {
-    padding: 10px;
-    border: 1px solid #ECF0F1;
-    text-align: center;
-    color: #2C3E50;
-}
-
-table tbody tr:nth-child(even) {
-    background-color: #F9FBFC;
-    /* Light gray for alternating rows */
-}
-
-/* Footer styling */
+/* Footer Styling */
 .footer {
-    background-color: #2ECC71;
-    /* Same green as the navbar for consistency */
-    color: #ffffff;
-    /* White text */
-    text-align: right;
-    padding: 0px 10px;
+    background-color: #B3541E; /* Rusty brown-orange */
+    color: #FDF6E4; /* Light cream text */
+    text-align: center;
+    padding: 10px 20px;
     position: fixed;
-    /* Sticks the footer to the bottom */
     bottom: 0;
     width: 100%;
     font-size: 0.9em;
-    /* Slightly smaller font size for footer */
     z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .footer a {
-    color: #ffffff;
-    /* White links in footer */
+    color: #FDF6E4;
     text-decoration: none;
     font-weight: bold;
 }
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+/* Adjust main content to avoid footer overlap */
+main {
+    padding-bottom: 60px;
+}
+
+/* Learn page container styling */
+.learn-container {
+    background-color: #FDF6E4; /* Light cream background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.learn-container h2 {
+    color: #B3541E; /* Rusty brown-orange heading */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.learn-container h3 {
+    color: #A0502E; /* Slightly darker brown for section titles */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.learn-container p {
+    color: #7F6F5A; /* Muted brown for paragraph text */
+    margin-bottom: 15px;
+}
+
+.learn-container ul, .learn-container ol {
+    margin-left: 20px;
+    color: #4E342E; /* Dark brown text for lists */
+}
+
+.learn-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.learn-container table thead th {
+    background-color: #B3541E; /* Rusty brown header background */
+    color: #FFFFFF; /* White text */
+    padding: 10px;
+    text-align: center;
+}
+
+.learn-container table tbody td {
+    padding: 10px;
+    border: 1px solid #FDF6E4; /* Same light cream color as the background */
+    text-align: center;
+    color: #4E342E; /* Dark brown text */
+}
+
+.learn-container table tbody tr:nth-child(even) {
+    background-color: #FAF3E0; /* Slightly lighter cream for alternate rows */
+}
+
+/* Practice page container styling */
+.content-box {
+    background-color: #FDF6E4; /* Light cream background */
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Center the container and limit width */
+    text-align: center;
+}
+
+/* Heading styling for the Practice page */
+.content-box h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #B3541E; /* Rusty brown-orange heading */
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+#command-input {
+    background-color: #FFF9F4; /* Very light cream background */
+    border: 1px solid #E0CDB5; /* Soft beige border */
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #4E342E; /* Dark brown text */
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#command-input:focus {
+    outline: none;
+    border-color: #B3541E; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(179, 84, 30, 0.5);
+}
+
+/* Practice session question styling */
+#practice-question {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #A0502E; /* Slightly darker brown for questions */
+    margin-bottom: 15px;
+}
+
+/* Input for answer */
+#answer-input {
+    background-color: #FFF9F4; /* Light cream background */
+    border: 1px solid #E0CDB5;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #4E342E;
+    display: none;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    background-color: #B3541E; /* Rusty brown-orange */
+    color: #FFF; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #8E4315; /* Darker shade of rusty brown */
+    transform: translateY(-2px); /* Slight hover effect */
+}
+
+button:active {
+    transform: translateY(1px); /* Pressed effect */
+}
+
+/* Feedback styling */
+#feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #7F6F5A; /* Muted brown for feedback */
+}
+
+/* Quiz Page Styling */
+.quiz-container {
+    background-color: #FDF6E4; /* Light cream background */
+    padding: 30px 40px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 800px; /* Center the container and limit width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #4E342E; /* Deep brown text */
+    text-align: center;
+}
+
+.quiz-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #B3541E; /* Rusty brown-orange heading */
+    margin-bottom: 20px;
+}
+
+.quiz-container p {
+    color: #7F6F5A; /* Muted brown text */
+    margin-bottom: 15px;
+}
+
+#quiz-score {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4E342E; /* Deep brown text */
+}
+
+#quiz-question-text {
+    font-weight: bold;
+    color: #A0502E; /* Slightly darker brown for questions */
+}
+
+#quiz-answer-input {
+    background-color: #FFF9F4; /* Very light cream background */
+    border: 1px solid #E0CDB5; /* Soft beige border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #4E342E; /* Deep brown text */
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 15px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-answer-input:focus {
+    outline: none;
+    border-color: #B3541E; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(179, 84, 30, 0.5);
+}
+
+#submit-quiz-answer {
+    background-color: #B3541E; /* Rusty brown-orange */
+    color: #FFFFFF; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+#submit-quiz-answer:hover {
+    background-color: #8E4315; /* Darker shade of rusty brown */
+    transform: translateY(-2px);
+}
+
+#submit-quiz-answer:active {
+    transform: translateY(1px);
+}
+
+#quiz-feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #7F6F5A; /* Muted brown for feedback */
+}
+
+#quiz-results {
+    margin-top: 20px;
+}
+
+#restart-quiz {
+    background-color: #D87A2B; /* Burnt orange */
+    color: #FFFFFF; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#restart-quiz:hover {
+    background-color: #B3541E; /* Rusty brown-orange on hover */
+    transform: translateY(-2px);
+}
+
+#restart-quiz:active {
+    transform: translateY(1px);
 }

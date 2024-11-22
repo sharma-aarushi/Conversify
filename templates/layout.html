@@ -6,21 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversify - Learn French Subjunctive</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <!-- Add this in the <head> section -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Add this before the closing </body> tag -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
-
 </head>
 
 <body>
     <header class="navbar">
         <div class="container">
-            <!-- Logo on the left -->
             <h1><a href="{{ url_for('index') }}">Conversify</a></h1>
-
-            <!-- Menu on the right -->
             <nav>
                 <ul>
-                    <li><a href="{{ url_for(
+                    <li><a href="{{ url_for('learn') }}">Learn</a></li>
+                    <li><a href="{{ url_for('practice') }}">Practice</a></li>
+                    <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+
+    <main class="container mt-4">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Conversify</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
